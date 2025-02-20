@@ -8,3 +8,13 @@ while month != "stop":
   rent_pct = float(input("Enter the rent percentage: "))
   electricity_pct = float(input("Enter the electricity percentage: "))
   savings_pct = float(input("Enter the savings percentage: "))
+  
+  # Create a dictionary for the finance
+  finance = {
+  "month": month,
+  "income": income,
+  "rent": rent_pct,
+  "electricity": electricity_pct,
+  "savings": savings_pct,
+  }
+  finances.append(finance)
