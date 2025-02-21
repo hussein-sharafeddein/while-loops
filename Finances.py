@@ -36,3 +36,13 @@ while month != "stop":
 
   # Total salary squared
   salary_squared = income ** 2
+
+  # Display results
+  print(f"amount allocated to savings: {amount_savings}")
+  print(f"amount allocated to rent: {amount_rent}")
+  print(f"amount allocated to electricity: {amount_electricity}")
+  print(f"Total expenses: {total_expenses}")
+  print(f"Remainder of salary: {remainder_salary}")
+  print(f"Yearly rent cost: {yearly_rent}")
+  print(f"Yearly electricity cost: {yearly_electricity}")
+  print(f"Total salary squared: {salary_squared}")
