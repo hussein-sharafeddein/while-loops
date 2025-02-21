@@ -54,3 +54,17 @@ while month != "stop":
     additional_savings_pct = (additional_savings / income) * 100
     finance["savings"] += additional_savings_pct
     savings_pct = finance["savings"]
+
+    # Recalculation
+    amount_savings = (savings_pct / 100) * income
+    total_expenses = amount_savings + amount_rent + amount_electricity
+    remainder_salary = income - total_expenses
+    yearly_rent = amount_rent * 12
+    yearly_electricity = amount_electricity * 12
+    salary_squared = income ** 2
+
+    update_savings = input("Do you want to update savings again? (yes/no): ")
+
+  month = input("Enter the month (or write stop to stop): ")
+
+print(finances)
