@@ -18,3 +18,21 @@ while month != "stop":
   "savings": savings_pct,
   }
   finances.append(finance)
+
+  # Calculate amounts
+  amount_savings = (savings_pct / 100) * income
+  amount_rent = (rent_pct / 100) * income
+  amount_electricity = (electricity_pct / 100) * income
+
+  # Total expenses
+  total_expenses = amount_savings + amount_rent + amount_electricity
+
+  # Remainder of salary
+  remainder_salary = income - total_expenses
+
+  # Yearly rent and electricity costs
+  yearly_rent = amount_rent * 12
+  yearly_electricity = amount_electricity * 12
+
+  # Total salary squared
+  salary_squared = income ** 2
