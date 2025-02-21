@@ -63,6 +63,14 @@ while month != "stop":
     yearly_electricity = amount_electricity * 12
     salary_squared = income ** 2
 
+    # Display updated results
+    print(f"Updated amount allocated to savings: {amount_savings}")
+    print(f"Updated total expenses: {total_expenses}")
+    print(f"Updated remainder of salary: {remainder_salary}")
+    print(f"Updated yearly rent cost: {yearly_rent}")
+    print(f"Updated yearly electricity cost: {yearly_electricity}")
+    print(f"Updated total salary squared: {salary_squared}")
+    
     update_savings = input("Do you want to update savings again? (yes/no): ")
 
   month = input("Enter the month (or write stop to stop): ")
