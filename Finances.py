@@ -46,3 +46,11 @@ while month != "stop":
   print(f"Yearly rent cost: {yearly_rent}")
   print(f"Yearly electricity cost: {yearly_electricity}")
   print(f"Total salary squared: {salary_squared}")
+
+  # Ask if Nabiha wants to update savings
+  update_savings = input("Do you want to update savings? (yes/no): ")
+  while update_savings == "yes":
+    additional_savings = float(input("Enter the additional savings amount: "))
+    additional_savings_pct = (additional_savings / income) * 100
+    finance["savings"] += additional_savings_pct
+    savings_pct = finance["savings"]
